@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Returning Customer Detector</title>
+	<link rel="stylesheet" href="./assets/style.css" type="text/css">
+</head>
+<body>
+	<div id="results">Initalizing camera input.</div>
+	
+	<h1>Returning Customer Detector</h1>
+
+	<p><a class="red" href="add.html">Add new customer</a></p>
+	<div id="camera"></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./assets/webcam.min.js"></script>
+	<script type="text/javascript" src="./assets/app.js"></script>
+
+	<!-- Code to handle taking the snapshot and displaying it locally -->
+	<script language="JavaScript">
+		$(document).ready(function () {
+            var interval = setInterval("take_snapshot()", 3000);
+            setTimeout(function() {
+                clearInterval(interval);
+            }, 12000);
+        });
+	</script>
+</body>
+</html>

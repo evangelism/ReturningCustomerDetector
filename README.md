@@ -13,3 +13,13 @@ You need you Subscription Key  for MSFT Azure. It can be created here: https://p
 ## Configuration
 
 Simply copy config.php.sample to config.php and put here your key. Application should now work.
+
+## 3rd party libraries
+
+For client Face detection we use:
+
+http://facedetection.jaysalvat.com/
+
+For working with Webcam:
+
+http://github.com/jhuckaby/webcamjs

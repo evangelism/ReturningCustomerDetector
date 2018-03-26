@@ -38,12 +38,10 @@ class FaceApi
     return $response;
   }
 
-  public function identify($faceid, $groupId = "securityapp")
+  public function identify(array $faceids, $groupId = "securityapp")
   {
     $data = [
-      "faceIds" => [
-        $faceid
-      ],
+      "faceIds" => $faceids,
       "personGroupId" => $groupId
     ];
     $data = json_encode($data);
